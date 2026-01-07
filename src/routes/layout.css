@@ -1,5 +1,11 @@
 @import 'tailwindcss';
 
+/* Plugin configurations */
+@plugin "@tailwindcss/typography";
+@plugin "daisyui" {
+	themes: light --default;
+}
+
 @layer base {
 	html {
 		scroll-behavior: smooth;
@@ -56,8 +62,4 @@
 	}
 }
 
-/* Plugin configurations */
-@plugin "@tailwindcss/typography";
-@plugin "daisyui" {
-	themes: light --default;
-}
+
